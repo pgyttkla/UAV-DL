@@ -1,0 +1,51 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== 虚拟环境 =====
+# conda 环境默认在 ~/miniconda3/envs 下，不在项目内；
+# 但如果以后在项目里建 venv，不要提交
+.venv/
+venv/
+env/
+
+# ===== IDE =====
+.idea/
+.vscode/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== 深度学习产物（体积大，绝不进 Git）=====
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.weights
+*.h5
+*.pb
+runs/
+outputs/
+logs/
+wandb/
+lightning_logs/
+*.tfevents.*
+
+# ===== 数据集与权重（UAV 数据集常见几百 MB ~ 几十 GB）=====
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
